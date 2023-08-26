@@ -1,0 +1,13 @@
+h1 {
+  font-weight: bold;
+  font-size: 20vw;
+  text-transform: uppercase;
+  letter-spacing: -1rem;
+  text-align: center;
+}
+
+@media (max-width: 650px) {
+  h1 {
+    letter-spacing: -0.5rem;
+  }
+}

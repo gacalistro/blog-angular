@@ -1,0 +1,11 @@
+<header class="container">
+  <div id="logo">The Blog</div>
+
+  <nav>
+    <ul>
+      <li *ngFor="let item of navItemList">
+        <a href="{{ item.url }}">{{ item.name }}</a>
+      </li>
+    </ul>
+  </nav>
+</header>
