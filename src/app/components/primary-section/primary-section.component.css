@@ -1,3 +1,61 @@
 main {
   padding-block: 5rem;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2%;
+}
+
+a {
+  color: black;
+}
+
+img {
+  width: 100%;
+}
+
+h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 2rem;
+}
+
+p {
+  letter-spacing: -0.3px;
+  color: gray;
+}
+
+#highlight img {
+  margin-bottom: 1rem;
+}
+
+#highlight h2 {
+  margin-bottom: 1.4rem;
+}
+
+#posts {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.post a {
+  display: flex;
+  gap: 1rem;
+}
+
+.post img {
+  flex: 1;
+  width: 40%;
+}
+
+.post h2 {
+  flex: 2;
+}
+
+@media (max-width: 768px) {
+  main {
+    grid-template-columns: 1fr;
+  }
 }

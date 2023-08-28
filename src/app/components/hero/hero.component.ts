@@ -1,10 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, Input } from "@angular/core";
 
 @Component({
-  selector: 'app-hero',
-  templateUrl: './hero.component.html',
-  styleUrls: ['./hero.component.css']
+  selector: "app-hero",
+  templateUrl: "./hero.component.html",
+  styleUrls: ["./hero.component.css"],
 })
 export class HeroComponent {
-
+  @Input() hero_title: string = "The Blog";
 }

@@ -6,7 +6,9 @@ import { AppComponent } from "./app.component";
 import { NavbarComponent } from "./components/navbar/navbar.component";
 import { HeroComponent } from "./components/hero/hero.component";
 import { PrimarySectionComponent } from "./components/primary-section/primary-section.component";
-import { SecondarySectionComponent } from "./components/secondary-section/secondary-section.component";
+import { LandingComponent } from './pages/landing/landing.component';
+import { PostComponent } from './pages/post/post.component';
+import { ArticleComponent } from './components/article/article.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { SecondarySectionComponent } from "./components/secondary-section/second
     NavbarComponent,
     HeroComponent,
     PrimarySectionComponent,
-    SecondarySectionComponent,
+    LandingComponent,
+    PostComponent,
+    ArticleComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

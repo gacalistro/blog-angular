@@ -1,0 +1,26 @@
+<style>
+  img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    margin-bottom: 4rem;
+  }
+
+  h2 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+  }
+
+  p {
+    font-size: 2.4rem;
+    margin-bottom: 10rem;
+  }
+</style>
+
+<main class="container" *ngIf="post">
+  <img src="{{ post.coverUrl }}" alt="{{ post.title }}" />
+
+  <h2>{{ post.title }}</h2>
+
+  <p>{{ post.content }}</p>
+</main>
