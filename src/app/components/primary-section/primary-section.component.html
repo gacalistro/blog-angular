@@ -1,0 +1,89 @@
+<style>
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2%;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  h2 {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 2rem;
+  }
+
+  p {
+    letter-spacing: -0.3px;
+  }
+
+  #highlight img {
+    margin-bottom: 1rem;
+  }
+
+  #highlight h2 {
+    margin-bottom: 1.4rem;
+  }
+
+  #posts {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .post {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .post img {
+    flex: 1;
+    width: 40%;
+  }
+
+  .post h2 {
+    flex: 2;
+  }
+
+  @media (max-width: 768px) {
+    main {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+<main class="container">
+  <article id="highlight">
+    <img src="https://fakeimg.pl/440x320/" />
+    <h2>Highlighted Article Title</h2>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus
+      repellendus voluptatem et a laborum voluptate. Nostrum libero assumenda
+      repellat animi, distinctio, nulla debitis, tenetur commodi officiis beatae
+      excepturi quas sequi.
+    </p>
+  </article>
+
+  <div id="posts">
+    <article class="post">
+      <img src="https://fakeimg.pl/220x160/" />
+
+      <h2>Article Title</h2>
+    </article>
+
+    <article class="post">
+      <img src="https://fakeimg.pl/220x160/" />
+
+      <h2>Article Title</h2>
+    </article>
+
+    <article class="post">
+      <img src="https://fakeimg.pl/220x160/" />
+
+      <h2>Article Title</h2>
+    </article>
+  </div>
+</main>
